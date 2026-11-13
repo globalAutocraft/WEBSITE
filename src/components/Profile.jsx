@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { branches } from '../data/branches.js'
 import { company } from '../data/company.js'
+import { asset } from '../lib/asset.js'
 import { PHONE } from '../data/contact.js'
 import { PhoneIcon, PinIcon } from './Icons.jsx'
 import './Profile.css'
@@ -79,7 +80,7 @@ export default function Profile() {
       <figure className="profile-media">
         <img
           ref={imageRef}
-          src="/images/profile-garage.webp"
+          src={asset('/images/profile-garage.webp')}
           alt="TVS Racing team working on an Apache RR 310 in the garage"
           loading="lazy"
           decoding="async"

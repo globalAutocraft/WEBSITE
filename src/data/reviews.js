@@ -12,6 +12,8 @@
   Entries with `sample: true` have placeholder REVIEW TEXT. They only appear while
   developing (npm run dev) and are removed automatically from the live site.
 */
+import { asset } from '../lib/asset.js'
+
 const PHOTOS = [
   { file: 'keys-handed-over', caption: 'Keys handed over', branch: null },
   { file: 'family-scooter', caption: 'A new scooter for the family', branch: null },
@@ -36,7 +38,7 @@ const samples = PHOTOS.map((p, i) => ({
   branch: p.branch,
   rating: 5,
   text: SAMPLE_TEXT[i % SAMPLE_TEXT.length],
-  photo: `/reviews/${p.file}.webp`,
+  photo: asset(`/reviews/${p.file}.webp`),
   sample: true,
 }))
 

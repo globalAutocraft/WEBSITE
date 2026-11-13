@@ -3,7 +3,7 @@ import FindUs from '../components/FindUs.jsx'
 import { ArrowRightIcon, PhoneIcon, PinIcon } from '../components/Icons.jsx'
 import { branches } from '../data/branches.js'
 import { PHONE, PHONE_DISPLAY, wa } from '../data/contact.js'
-import models from '../data/models.json'
+import models from '../data/models.js'
 import './Contact.css'
 
 const REASONS = ['Buy a new vehicle', 'Book a test ride', 'Book a service', 'Finance / EMI', 'Insurance', 'Something else']

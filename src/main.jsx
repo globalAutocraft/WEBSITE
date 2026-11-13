@@ -10,7 +10,8 @@ startSmoothScroll()
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    {/* basename: "" locally, "/WEBSITE" on GitHub Pages */}
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <AuthProvider>
         <App />
       </AuthProvider>

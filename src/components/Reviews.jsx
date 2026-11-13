@@ -21,7 +21,12 @@ const TINTS = ['#f1e9e4', '#e6edf3', '#eef0e6', '#f3e8ee', '#e9e8f3', '#e8f1ef']
 const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
 const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3)
 
+// Live site with no real reviews yet: show nothing instead of an empty reel.
 export default function Reviews() {
+  return reviews.length ? <ReviewReels /> : null
+}
+
+function ReviewReels() {
   const sectionRef = useRef(null)
   const windowRef = useRef(null)
   const reelsRef = useRef(null)

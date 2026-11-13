@@ -3,8 +3,9 @@ import { useLocation } from 'react-router-dom'
 import { ArrowRightIcon } from '../components/Icons.jsx'
 import { branches } from '../data/branches.js'
 import { wa } from '../data/contact.js'
-import models from '../data/models.json'
+import models from '../data/models.js'
 import { services } from '../data/services.js'
+import { asset } from '../lib/asset.js'
 import './Services.css'
 
 const TABS = [
@@ -40,7 +41,7 @@ export default function Services() {
     <main className="svc">
       {/* ---------- hero ---------- */}
       <section className="svc-hero">
-        <img src="/images/service/hero.webp" alt="Technicians working on an Apache RR 310 in the workshop" />
+        <img src={asset('/images/service/hero.webp')} alt="Technicians working on an Apache RR 310 in the workshop" />
         <div className="svc-hero-shade" />
         <h1>Global TVS Service</h1>
       </section>

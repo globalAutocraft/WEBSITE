@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Profile from '../components/Profile.jsx'
+import { asset } from '../lib/asset.js'
 import Stats from '../components/Stats.jsx'
 import { ArrowRightIcon, PhoneIcon } from '../components/Icons.jsx'
 import { branches } from '../data/branches.js'
@@ -104,7 +105,7 @@ export default function About() {
           <div className="moments-track">
             {[...MOMENTS, ...MOMENTS].map(([file, caption], i) => (
               <figure key={i} aria-hidden={i >= MOMENTS.length}>
-                <img src={`/reviews/${file}.webp`} alt={i < MOMENTS.length ? caption : ''} loading="lazy" />
+                <img src={asset(`/reviews/${file}.webp`)} alt={i < MOMENTS.length ? caption : ''} loading="lazy" />
                 <figcaption>{caption}</figcaption>
               </figure>
             ))}

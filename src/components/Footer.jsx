@@ -132,7 +132,7 @@ export default function Footer() {
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             {link('Careers', () => openMenu('careers'))}
-            <li><a href="/#reviews">Customer Reviews</a></li>
+            <li><Link to="/#reviews">Customer Reviews</Link></li>
           </ul>
         </div>
         <div>

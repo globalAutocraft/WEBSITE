@@ -17,7 +17,7 @@ const items = [
   { label: 'Electric', pane: 'electric' },
   { label: 'Book a Test Ride', href: wa('Hi Global TVS, I would like to book a test ride.'), external: true },
   { label: 'Service', pane: 'services' },
-  { label: 'Find Us', href: '/#contact' },
+  { label: 'Find Us', to: '/#contact' },
   { label: 'Contact Us', to: '/contact' },
   { label: 'About Us', to: '/about' },
   { label: 'Careers', pane: 'careers' },

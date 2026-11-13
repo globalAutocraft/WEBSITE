@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
-import models from '../data/models.json'
+import models from '../data/models.js'
 import { wa } from '../data/contact.js'
 import { prettyColour, swatchBackground } from '../data/swatch.js'
 import { ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from '../components/Icons.jsx'

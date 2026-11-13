@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import models from '../data/models.json'
+import models from '../data/models.js'
 import { ArrowRightIcon } from './Icons.jsx'
 import './VehicleList.css'
 
