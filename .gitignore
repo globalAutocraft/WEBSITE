@@ -25,3 +25,6 @@ dist-ssr
 
 # Original full-size videos (the site uses the compressed copies in public/videos)
 media-source/
+
+# Design-check tool cache (local only)
+.impeccable/
