@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* smooth scrolling is handled by Lenis (src/lib/smoothScroll.js) */
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Barlow', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: #0e0e12;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+.next-placeholder {
+  min-height: 60vh;
+  display: grid;
+  place-content: center;
+  color: #8a8a93;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* sections reached from links stop just below the fixed header */
+section[id] {
+  scroll-margin-top: 76px;
+}

@@ -1,0 +1,339 @@
+.reviews {
+  padding: clamp(40px, 6vw, 80px) clamp(16px, 4.4vw, 64px) clamp(80px, 10vw, 140px);
+  background: #fff;
+  color: #0e0e12;
+}
+
+.reviews-head {
+  padding: 0 calc(clamp(20px, 9.5vw, 160px) - clamp(16px, 4.4vw, 64px));
+  margin-bottom: clamp(28px, 4vw, 48px);
+}
+
+.reviews-eyebrow {
+  margin: 0 0 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #6b6b75;
+}
+
+.reviews-title {
+  margin: 0;
+  font-size: clamp(36px, 4.6vw, 64px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.reviews-stage {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: clamp(24px, 4vw, 64px);
+  align-items: center;
+}
+
+/* ---------- slanted reels ---------- */
+
+.reels-window {
+  position: relative;
+  contain: layout paint;
+  height: min(76vh, 640px);
+  min-height: 460px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #f5f5f7;
+  isolation: isolate;
+}
+
+.reels {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 160%;
+  height: 175%;
+  display: flex;
+  justify-content: center;
+  gap: var(--gap);
+  transform: translate(-50%, -50%) rotate(14deg);
+}
+
+.reel {
+  position: relative;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  width: var(--tile);
+  will-change: transform; /* each reel moves as one GPU layer – no per-frame repainting */
+}
+
+.reel.is-pick {
+  z-index: 2;
+}
+
+.tile {
+  position: relative;
+  flex: none;
+  width: var(--tile);
+  height: var(--tile);
+  margin: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--tint);
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+.tile.is-placeholder img {
+  object-fit: contain;
+  padding: 12%;
+}
+
+/* one layer that fades the reels back while a customer is shown (cheap: a single opacity change) */
+.reels-dim {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: rgba(245, 245, 247, 0.74);
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+  will-change: opacity;
+}
+
+.is-show .reels-dim {
+  opacity: 1;
+}
+
+/* the chosen customer: its own layer, animated with transform only (see showPop in Reviews.jsx) */
+.pop {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  width: calc(var(--tile) * 1.5);
+  height: calc(var(--tile) * 1.5);
+  margin: calc(var(--tile) * -0.75) 0 0 calc(var(--tile) * -0.75);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ddd;
+  box-shadow: 0 0 0 3px #fff, 0 40px 70px -20px rgba(14, 14, 18, 0.55);
+  visibility: hidden;
+  will-change: transform, opacity;
+}
+
+.pop.is-on {
+  visibility: visible;
+}
+
+.pop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pop figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 18px 14px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0));
+  color: #fff;
+}
+
+.pop-name {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.pop-branch {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.pop-branch:empty {
+  display: none;
+}
+
+.reels-fade {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background:
+    linear-gradient(to bottom, #f5f5f7 0%, rgba(245, 245, 247, 0) 14%, rgba(245, 245, 247, 0) 86%, #f5f5f7 100%),
+    linear-gradient(to right, #f5f5f7 0%, rgba(245, 245, 247, 0) 8%, rgba(245, 245, 247, 0) 92%, #f5f5f7 100%);
+}
+
+/* ---------- review text ---------- */
+
+.review-panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  padding: clamp(8px, 2vw, 24px) 0;
+}
+
+.review-card {
+  flex: 1;
+  animation: review-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.review-card.is-hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+@keyframes review-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin-bottom: 22px;
+}
+
+.review-stars {
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #f5a623;
+}
+
+.review-stars-off {
+  color: #dcdce2;
+}
+
+.review-source {
+  font-size: 14px;
+  color: #6b6b75;
+}
+
+.review-sample {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #fff4d6;
+  color: #8a5a00;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.review-text {
+  position: relative;
+  margin: 0 0 28px;
+  font-size: clamp(20px, 1.9vw, 28px);
+  line-height: 1.42;
+  letter-spacing: -0.005em;
+}
+
+.review-text::before {
+  content: '\201C';
+  display: block;
+  height: 0.5em;
+  margin-bottom: 0.15em;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 3.4em;
+  line-height: 1;
+  color: #e31e24;
+}
+
+.review-who {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.review-who span {
+  color: #6b6b75;
+  font-size: 14px;
+}
+
+.review-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid #e4e4e9;
+}
+
+.review-count {
+  font-size: 22px;
+  font-variant-numeric: tabular-nums;
+}
+
+.review-count em {
+  font-style: normal;
+  color: #9a9aa3;
+}
+
+.review-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #010205;
+  color: #fff;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.review-next:hover:not(:disabled) {
+  background: #2a2a33;
+}
+
+.review-next:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.review-next:focus-visible {
+  outline: 2px solid #0e0e12;
+  outline-offset: 3px;
+}
+
+/* ---------- tablet & phone ---------- */
+
+@media (max-width: 960px) {
+  .reviews-stage {
+    grid-template-columns: 1fr;
+  }
+  .reels-window {
+    height: 440px;
+    min-height: 0;
+  }
+  .review-panel {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reels-dim,
+  .review-card {
+    transition: none;
+    animation: none;
+  }
+}

@@ -1,0 +1,408 @@
+.account {
+  --ink: #0e0e12;
+  --muted: #6b6b75;
+  --line: #dcdce2;
+  --tvs-blue: #1f3c88;
+  --tvs-red: #e31e24;
+}
+
+/* ---------- Welcome card with a slow TVS blue/red light around its edge ---------- */
+
+/* Plain white card, like the reference */
+.account-card {
+  position: relative;
+  padding: 24px;
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.account-title {
+  margin: 0 0 18px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.account-text {
+  margin: 0 0 22px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.account-hint {
+  margin: 12px 0 0;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+/* ---------- Two-step sign-in that slides sideways ---------- */
+
+.steps {
+  display: grid;
+  grid-template-columns: 100% 100%;
+  column-gap: 24px;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.steps .step {
+  grid-row: 1;
+  transition: opacity 0.35s ease;
+}
+
+.steps.is-otp {
+  transform: translateX(calc(-100% - 24px));
+}
+
+.steps.is-otp .step:first-child,
+.steps.is-phone .step:nth-child(2) {
+  opacity: 0;
+}
+
+.steps-viewport {
+  overflow: hidden;
+  margin: -6px;
+  padding: 6px; /* room for focus rings */
+}
+
+.demo-note {
+  margin: 16px 0 0;
+  padding-top: 14px;
+  border-top: 1px dashed var(--line);
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.phone-field {
+  display: flex;
+  align-items: center;
+  height: 54px;
+  margin-bottom: 12px;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.phone-field:focus-within {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 4px rgba(14, 14, 18, 0.06);
+}
+
+.phone-prefix {
+  padding: 0 12px 0 16px;
+  border-right: 1px solid var(--line);
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.phone-field input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0 14px;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 17px;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  outline: none;
+}
+
+.dark-btn {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 54px;
+  border: 0;
+  border-radius: 10px;
+  background: #010205;
+  color: #fff;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
+}
+
+.dark-btn:hover:not(:disabled) {
+  background: #2a2a33;
+}
+
+.dark-btn:active:not(:disabled) {
+  transform: scale(0.985);
+}
+
+.dark-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.text-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: var(--ink);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.otp {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.otp input {
+  width: 100%;
+  min-width: 0;
+  height: 58px;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  font: inherit;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.otp input:focus {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 4px rgba(14, 14, 18, 0.06);
+}
+
+.otp input.is-filled {
+  border-color: var(--ink);
+  animation: pop 0.25s ease;
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.resend {
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ---------- My Garage: Indian number-plate input ---------- */
+
+.account-label {
+  margin: 30px 4px 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.account-label.in-card {
+  margin: 4px 0 10px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.plate {
+  display: flex;
+  align-items: stretch;
+  height: 54px;
+  margin-bottom: 12px;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.plate:focus-within {
+  box-shadow: 0 0 0 4px rgba(14, 14, 18, 0.08);
+}
+
+.plate-ind {
+  display: grid;
+  place-items: end center;
+  width: 30px;
+  padding-bottom: 7px;
+  background: #1b4fb8;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.plate-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #111;
+  outline: none;
+}
+
+.plate-text {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .plate-text {
+    padding: 0 10px;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+  }
+  .plate.is-small .plate-text {
+    font-size: 16px;
+  }
+}
+
+.plate-text::placeholder {
+  color: #c4c4cc;
+}
+
+.garage {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.plate.is-small {
+  height: 44px;
+  margin: 0;
+  animation: slot-in 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.plate.is-small .plate-text {
+  font-size: 18px;
+}
+
+.plate-remove {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  border: 0;
+  border-left: 1px solid var(--line);
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.plate-remove:hover {
+  color: var(--tvs-red);
+}
+
+@keyframes slot-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.97);
+  }
+}
+
+/* ---------- Quick service links ---------- */
+
+.quick-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quick-list a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px;
+  margin: 0 -10px;
+  border-radius: 12px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.2s ease;
+}
+
+.quick-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fff;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.quick-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.quick-arrow {
+  margin-left: auto;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.quick-list a:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.quick-list a:hover .quick-icon {
+  background: var(--ink);
+  color: #fff;
+}
+
+.quick-list a:hover .quick-arrow {
+  opacity: 1;
+  transform: none;
+}
+
+.account :focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+/* these inputs already show focus on their own border */
+.account .phone-field input:focus-visible,
+.account .plate input:focus-visible,
+.account .otp input:focus-visible {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .steps {
+    transition: none;
+  }
+}

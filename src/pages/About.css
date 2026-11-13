@@ -1,0 +1,364 @@
+.about {
+  background: #fff;
+  color: #0e0e12;
+}
+
+.about-eyebrow {
+  margin: 0 0 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #6b6b75;
+}
+
+.about-head {
+  margin-bottom: clamp(32px, 4vw, 56px);
+}
+
+.about-head h2 {
+  margin: 0;
+  max-width: 18ch;
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- opening ---------- */
+
+.about-hero {
+  padding: clamp(130px, 14vw, 190px) clamp(20px, 9.5vw, 160px) clamp(40px, 5vw, 64px);
+  background: linear-gradient(to bottom, #eeeff2, #fff);
+}
+
+.about-title {
+  margin: 0 0 28px;
+  font-size: clamp(52px, 8vw, 120px);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+}
+
+/* each line of the title rises in */
+.about-title,
+.about-lead,
+.about-facts {
+  animation: about-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+.about-lead {
+  max-width: 56ch;
+  margin: 0 0 48px;
+  font-size: clamp(17px, 1.5vw, 21px);
+  line-height: 1.6;
+  color: #3d3d45;
+  animation-delay: 0.12s;
+}
+
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  animation-delay: 0.24s;
+}
+
+.about-facts div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 18px;
+  border-top: 1px solid #0e0e12;
+}
+
+.about-facts strong {
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 400;
+}
+
+.about-facts span {
+  color: #6b6b75;
+  font-size: 15px;
+}
+
+@keyframes about-rise {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+}
+
+/* ---------- showrooms ---------- */
+
+.about-branches {
+  padding: clamp(64px, 8vw, 120px) clamp(20px, 9.5vw, 160px);
+  background: #eeeff2;
+}
+
+.branch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+  gap: 16px;
+}
+
+.branch-card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px 24px;
+  border-radius: 20px;
+  background: #fff;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease calc(var(--i) * 90ms), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) calc(var(--i) * 90ms),
+    box-shadow 0.4s ease;
+}
+
+.about-branches.is-in .branch-card {
+  opacity: 1;
+  transform: none;
+}
+
+.branch-card:hover {
+  box-shadow: 0 24px 50px -28px rgba(14, 14, 18, 0.3);
+}
+
+.branch-card-num {
+  font-size: 13px;
+  font-weight: 500;
+  color: #e31e24;
+}
+
+.branch-card h3 {
+  margin: 14px 0 4px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.branch-card-name {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #6b6b75;
+}
+
+.branch-card-rating {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.branch-card-rating span {
+  color: #f5a623;
+}
+
+.branch-card-rating small {
+  font-weight: 400;
+  color: #8a8a93;
+}
+
+.branch-card-address {
+  margin: 0 0 22px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #3d3d45;
+}
+
+.branch-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.branch-card-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 8px;
+  background: #f0f0f3;
+  color: #0e0e12;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.branch-card-actions a:first-child {
+  background: #010205;
+  color: #fff;
+}
+
+.branch-card-actions a:hover {
+  background: #2a2a33;
+  color: #fff;
+}
+
+/* ---------- customer moments ---------- */
+
+.about-moments {
+  padding: clamp(64px, 8vw, 120px) 0;
+  overflow: hidden;
+}
+
+.about-moments .about-head {
+  padding: 0 clamp(20px, 9.5vw, 160px);
+}
+
+.moments-strip {
+  -webkit-mask: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  mask: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+
+/* two copies scroll left forever; transform-only, so it stays smooth */
+.moments-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: moments 48s linear infinite;
+}
+
+.moments-strip:hover .moments-track {
+  animation-play-state: paused;
+}
+
+@keyframes moments {
+  to {
+    transform: translateX(calc(-50% - 8px));
+  }
+}
+
+.moments-track figure {
+  position: relative;
+  flex: none;
+  width: clamp(220px, 22vw, 300px);
+  aspect-ratio: 1;
+  margin: 0;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.moments-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.moments-track figure:hover img {
+  transform: scale(1.05);
+}
+
+.moments-track figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px 14px 12px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ---------- careers + contact ---------- */
+
+.about-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 0 clamp(16px, 4.4vw, 64px) clamp(64px, 8vw, 110px);
+}
+
+.about-cta-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(28px, 4vw, 52px);
+  border-radius: 24px;
+  background: #eeeff2;
+}
+
+.about-cta-card h2 {
+  margin: 0 0 12px;
+  font-size: clamp(26px, 2.8vw, 38px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.about-cta-card > p:not(.about-eyebrow) {
+  margin: 0 0 28px;
+  color: #6b6b75;
+}
+
+.about-cta-card.is-dark {
+  background: #050507;
+  color: #fff;
+}
+
+.about-cta-card.is-dark .about-eyebrow,
+.about-cta-card.is-dark > p {
+  color: #9a9aa3 !important;
+}
+
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 54px;
+  padding: 0 24px;
+  margin-top: auto;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.about-btn svg {
+  transition: transform 0.25s ease;
+}
+
+.about-btn:hover svg {
+  transform: translateX(4px);
+}
+
+.about-btn-dark {
+  background: #010205;
+  color: #fff;
+}
+
+.about-btn-dark:hover {
+  background: #2a2a33;
+}
+
+.about-btn-light {
+  background: #fff;
+  color: #050507;
+}
+
+.about-btn-light:hover {
+  background: #e6e6ea;
+}
+
+.about a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .about-facts,
+  .about-cta {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-title,
+  .about-lead,
+  .about-facts,
+  .moments-track {
+    animation: none;
+  }
+  .branch-card {
+    opacity: 1;
+    transform: none;
+  }
+}

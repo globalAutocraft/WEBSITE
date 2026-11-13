@@ -1,0 +1,43 @@
+.svc-panel ul {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.svc-panel li {
+  animation: svc-panel-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  animation-delay: calc(var(--i) * 50ms);
+}
+
+@keyframes svc-panel-in {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+}
+
+.svc-panel li a {
+  display: block;
+  padding: 14px 0;
+  color: #0e0e12;
+  font-size: 19px;
+  text-decoration: none;
+  /* underline that draws in on hover */
+  background: linear-gradient(currentColor, currentColor) no-repeat 0 calc(100% - 10px) / 0% 1px;
+  transition: background-size 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.svc-panel li a:hover {
+  background-size: 100% 1px;
+}
+
+.svc-panel li a:focus-visible {
+  outline: 2px solid #0e0e12;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .svc-panel li {
+    animation: none;
+  }
+}

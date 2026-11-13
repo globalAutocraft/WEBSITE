@@ -1,0 +1,29 @@
+{
+  "name": "tvs-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "sync-models": "node scripts/sync-models.mjs",
+    "dev:host": "vite --host"
+  },
+  "dependencies": {
+    "lenis": "^1.3.27",
+    "maplibre-gl": "^5.24.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.90.0",
+    "sharp": "^0.35.5",
+    "vite": "^8.3.6"
+  }
+}

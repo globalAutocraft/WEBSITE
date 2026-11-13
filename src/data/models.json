@@ -1,0 +1,1056 @@
+[
+  {
+    "slug": "apache-rr-310",
+    "key": "APACHE RR 310",
+    "name": "Apache RR 310",
+    "category": "motorcycles",
+    "fuel": "Petrol",
+    "image": "/models/apache-rr-310.webp",
+    "variants": [
+      {
+        "name": "BASE RED W/O Quick Shifter",
+        "colours": [
+          "RACING RED"
+        ]
+      },
+      {
+        "name": "BASE RED",
+        "colours": [
+          "RACING RED"
+        ]
+      },
+      {
+        "name": "BASE GREY",
+        "colours": [
+          "GREY"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "RACING RED",
+        "image": "/models/apache-rr-310/racing-red.webp"
+      },
+      {
+        "name": "GREY",
+        "image": "/models/apache-rr-310/grey.webp"
+      }
+    ]
+  },
+  {
+    "slug": "apache-rtr-310",
+    "key": "APACHE RTR 310",
+    "name": "Apache RTR 310",
+    "category": "motorcycles",
+    "fuel": "Petrol",
+    "image": "/models/apache-rtr-310.webp",
+    "variants": [
+      {
+        "name": "BASE YELLOW",
+        "colours": [
+          "BLK YLW"
+        ]
+      },
+      {
+        "name": "BASE RED",
+        "colours": [
+          "RC RED"
+        ]
+      },
+      {
+        "name": "BASE W/o QUICK SHIFTER",
+        "colours": []
+      },
+      {
+        "name": "BASE BLACK",
+        "colours": [
+          "GL BLK"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "BLK YLW",
+        "image": "/models/apache-rtr-310/blk-ylw.webp"
+      },
+      {
+        "name": "RC RED",
+        "image": "/models/apache-rtr-310/rc-red.webp"
+      },
+      {
+        "name": "GL BLK",
+        "image": "/models/apache-rtr-310/gl-blk.webp"
+      }
+    ]
+  },
+  {
+    "slug": "apache-rtr-200-4v",
+    "key": "APACHE RTR 200 4V",
+    "name": "Apache RTR 200 4V",
+    "category": "motorcycles",
+    "fuel": "Petrol",
+    "image": "/models/apache-rtr-200-4v.webp",
+    "variants": [
+      {
+        "name": "2CH ABS USD TFT",
+        "colours": [
+          "GREY",
+          "MATTE BLACK"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "GREY",
+        "image": "/models/apache-rtr-200-4v/grey.webp"
+      },
+      {
+        "name": "MATTE BLACK",
+        "image": "/models/apache-rtr-200-4v/matte-black.webp"
+      }
+    ]
+  },
+  {
+    "slug": "apache-rtr-180",
+    "key": "APACHE RTR 180 2V",
+    "name": "Apache RTR 180",
+    "category": "motorcycles",
+    "fuel": "Petrol",
+    "image": "/models/apache-rtr-180.webp",
+    "variants": [
+      {
+        "name": "RM DISC BT",
+        "colours": []
+      }
+    ],
+    "colours": []
+  },
+  {
+    "slug": "apache-rtr-160-4v",
+    "key": "APACHE RTR 160 4V",
+    "name": "Apache RTR 160 4V",
+    "category": "motorcycles",
+    "fuel": "Petrol",
+    "image": "/models/apache-rtr-160-4v.webp",
+    "variants": [
+      {
+        "name": "2CH USD TFT PBI",
+        "colours": [
+          "MATTE BLACK"
+        ]
+      },
+      {
+        "name": "RM DISC BLACK EDITION",
+        "colours": []
+      },
+      {
+        "name": "2CH ABS USD",
+        "colours": []
+      },
+      {
+        "name": "2CH ABS USD TFT",
+        "colours": [
+          "MATTE BLACK",
+          "BLUE",
+          "RED"
+        ]
+      },
+      {
+        "name": "1CH ABS",
+        "colours": []
+      }
+    ],
+    "colours": [
+      {
+        "name": "MATTE BLACK",
+        "image": "/models/apache-rtr-160-4v/matte-black.webp"
+      },
+      {
+        "name": "BLUE",
+        "image": "/models/apache-rtr-160-4v/blue.webp"
+      }
+    ]
+  },
+  {
+    "slug": "apache-rtr-160",
+    "key": "APACHE RTR 160 2V",
+    "name": "Apache RTR 160",
+    "category": "motorcycles",
+    "fuel": "Petrol",
+    "image": "/models/apache-rtr-160.webp",
+    "variants": [
+      {
+        "name": "DUAL CHANNEL ABS",
+        "colours": [
+          "MATTE BLACK",
+          "WHITE"
+        ]
+      },
+      {
+        "name": "RM DISC BT",
+        "colours": []
+      },
+      {
+        "name": "DRUM",
+        "colours": []
+      },
+      {
+        "name": "RM DISC",
+        "colours": [
+          "WHITE"
+        ]
+      },
+      {
+        "name": "RACE EDITION",
+        "colours": [
+          "MATTE BLACK"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "MATTE BLACK",
+        "image": "/models/apache-rtr-160/matte-black.webp"
+      },
+      {
+        "name": "WHITE",
+        "image": "/models/apache-rtr-160/white.webp"
+      }
+    ]
+  },
+  {
+    "slug": "raider",
+    "key": "RAIDER",
+    "name": "Raider",
+    "category": "motorcycles",
+    "fuel": "Petrol",
+    "image": "/models/raider.webp",
+    "variants": [
+      {
+        "name": "TFT DD 1Ch ABS",
+        "colours": [
+          "STRIKING RED",
+          "BLUE",
+          "NITRO GREEN"
+        ]
+      },
+      {
+        "name": "DRUM Single Seat",
+        "colours": [
+          "BLACK"
+        ]
+      },
+      {
+        "name": "iGO RW",
+        "colours": [
+          "BLACK",
+          "NARDO GREY"
+        ]
+      },
+      {
+        "name": "LCD DD 1Ch ABS",
+        "colours": [
+          "BLUE",
+          "STRIKING RED",
+          "NITRO GREEN"
+        ]
+      },
+      {
+        "name": "iGO BW",
+        "colours": [
+          "STRIKING RED",
+          "FZ BLUE",
+          "BLACK"
+        ]
+      },
+      {
+        "name": "DISC Single Seat",
+        "colours": [
+          "M.GREY"
+        ]
+      },
+      {
+        "name": "Super Squad",
+        "colours": [
+          "WOLVERINE GREY",
+          "IRONMAN RED",
+          "DEADPOOL BLACK",
+          "DOOMSDAY GREEN",
+          "BLACK PANTHER"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "STRIKING RED",
+        "image": "/models/raider/striking-red.webp"
+      },
+      {
+        "name": "BLUE",
+        "image": "/models/raider/striking-red.webp"
+      },
+      {
+        "name": "NITRO GREEN",
+        "image": "/models/raider/nitro-green.webp"
+      },
+      {
+        "name": "BLACK",
+        "image": "/models/raider/black.webp"
+      },
+      {
+        "name": "NARDO GREY",
+        "image": "/models/raider/nardo-grey.webp"
+      },
+      {
+        "name": "FZ BLUE",
+        "image": "/models/raider/black.webp"
+      },
+      {
+        "name": "M.GREY",
+        "image": "/models/raider/m-grey.webp"
+      },
+      {
+        "name": "WOLVERINE GREY",
+        "image": "/models/raider/wolverine-grey.webp"
+      },
+      {
+        "name": "IRONMAN RED",
+        "image": "/models/raider/ironman-red.webp"
+      },
+      {
+        "name": "DEADPOOL BLACK",
+        "image": "/models/raider/deadpool-black.webp"
+      },
+      {
+        "name": "DOOMSDAY GREEN",
+        "image": "/models/raider/doomsday-green.webp"
+      },
+      {
+        "name": "BLACK PANTHER",
+        "image": "/models/raider/black-panther.webp"
+      }
+    ]
+  },
+  {
+    "slug": "radeon",
+    "key": "RADEON",
+    "name": "Radeon",
+    "category": "motorcycles",
+    "fuel": "Petrol",
+    "image": "/models/radeon.webp",
+    "variants": [
+      {
+        "name": "DRUM BLACK EDITION",
+        "colours": [
+          "BLACK"
+        ]
+      },
+      {
+        "name": "DRUM",
+        "colours": [
+          "STARLIGHT BLUE",
+          "PURPLE",
+          "BLACK",
+          "GREY"
+        ]
+      },
+      {
+        "name": "DIGI DISC",
+        "colours": [
+          "BLACK",
+          "BLUE BLACK",
+          "RED BLACK"
+        ]
+      },
+      {
+        "name": "DIGI DRUM",
+        "colours": [
+          "BLACK",
+          "BLUE BLACK",
+          "RED BLACK"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "BLACK",
+        "image": "/models/radeon/black.webp"
+      },
+      {
+        "name": "STARLIGHT BLUE",
+        "image": "/models/radeon/starlight-blue.webp"
+      },
+      {
+        "name": "PURPLE",
+        "image": "/models/radeon/purple.webp"
+      },
+      {
+        "name": "GREY",
+        "image": "/models/radeon/grey.webp"
+      },
+      {
+        "name": "BLUE BLACK",
+        "image": "/models/radeon/blue-black.webp"
+      },
+      {
+        "name": "RED BLACK",
+        "image": "/models/radeon/red-black.webp"
+      }
+    ]
+  },
+  {
+    "slug": "sport",
+    "key": "SPORT",
+    "name": "Sport",
+    "category": "motorcycles",
+    "fuel": "Petrol",
+    "image": "/models/sport.webp",
+    "variants": [
+      {
+        "name": "ES PLUS",
+        "colours": [
+          "M GREY",
+          "BLACK"
+        ]
+      },
+      {
+        "name": "ES",
+        "colours": []
+      }
+    ],
+    "colours": [
+      {
+        "name": "M GREY",
+        "image": "/models/sport/m-grey.webp"
+      },
+      {
+        "name": "BLACK",
+        "image": "/models/sport/black.webp"
+      }
+    ]
+  },
+  {
+    "slug": "xl100",
+    "key": "XL 100",
+    "name": "XL100",
+    "category": "motorcycles",
+    "fuel": "Petrol",
+    "image": "/models/xl100.webp",
+    "variants": [
+      {
+        "name": "XL 100 HD iTs MWL",
+        "colours": [
+          "RED"
+        ]
+      },
+      {
+        "name": "HD iTOUCH",
+        "colours": [
+          "PURPLE",
+          "GREEN",
+          "BLUE",
+          "BLACK",
+          "RED"
+        ]
+      },
+      {
+        "name": "WINNER EDTN",
+        "colours": [
+          "BLUE"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "RED",
+        "image": "/models/xl100/red.webp"
+      },
+      {
+        "name": "PURPLE",
+        "image": "/models/xl100/purple.webp"
+      },
+      {
+        "name": "GREEN",
+        "image": "/models/xl100/green.webp"
+      },
+      {
+        "name": "BLUE",
+        "image": "/models/xl100/blue.webp"
+      },
+      {
+        "name": "BLACK",
+        "image": "/models/xl100/black.webp"
+      }
+    ]
+  },
+  {
+    "slug": "ntorq-150",
+    "key": "NTORQ 150",
+    "name": "NTORQ 150",
+    "category": "scooters",
+    "fuel": "Petrol",
+    "image": "/models/ntorq-150.webp",
+    "variants": [
+      {
+        "name": "LCD",
+        "colours": [
+          "BLUE",
+          "SILVER",
+          "RED"
+        ]
+      },
+      {
+        "name": "TFT",
+        "colours": [
+          "BLUE",
+          "RED",
+          "NITRO GREEN"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "BLUE",
+        "image": "/models/ntorq-150/blue.webp"
+      },
+      {
+        "name": "SILVER",
+        "image": "/models/ntorq-150/silver.webp"
+      },
+      {
+        "name": "RED",
+        "image": "/models/ntorq-150/red.webp"
+      },
+      {
+        "name": "NITRO GREEN",
+        "image": "/models/ntorq-150/nitro-green.webp"
+      }
+    ]
+  },
+  {
+    "slug": "ntorq-125",
+    "key": "NTORQ 125",
+    "name": "NTORQ 125",
+    "category": "scooters",
+    "fuel": "Petrol",
+    "image": "/models/ntorq-125.webp",
+    "variants": [
+      {
+        "name": "XT",
+        "colours": [
+          "NEON"
+        ]
+      },
+      {
+        "name": "RACE EDITION",
+        "colours": [
+          "N.GREEN",
+          "H.BLUE",
+          "RED GREY",
+          "RED BLACK"
+        ]
+      },
+      {
+        "name": "DISC",
+        "colours": [
+          "GREY",
+          "H BLUE",
+          "BLACK",
+          "WHITE"
+        ]
+      },
+      {
+        "name": "SUPER SQUAD",
+        "colours": [
+          "CAPTAIN AMERICA"
+        ]
+      },
+      {
+        "name": "RACE XP",
+        "colours": [
+          "BLUE",
+          "RED",
+          "BLACK"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "NEON",
+        "image": "/models/ntorq-125/neon.webp"
+      },
+      {
+        "name": "N.GREEN",
+        "image": "/models/ntorq-125/n-green.webp"
+      },
+      {
+        "name": "RED GREY",
+        "image": "/models/ntorq-125/red-grey.webp"
+      },
+      {
+        "name": "RED BLACK",
+        "image": "/models/ntorq-125/red-grey.webp"
+      },
+      {
+        "name": "GREY",
+        "image": "/models/ntorq-125/grey.webp"
+      },
+      {
+        "name": "BLACK",
+        "image": "/models/ntorq-125/black.webp"
+      },
+      {
+        "name": "WHITE",
+        "image": "/models/ntorq-125/white.webp"
+      },
+      {
+        "name": "CAPTAIN AMERICA",
+        "image": "/models/ntorq-125/captain-america.webp"
+      }
+    ]
+  },
+  {
+    "slug": "jupiter-125",
+    "key": "JUPITER 125",
+    "name": "Jupiter 125",
+    "category": "scooters",
+    "fuel": "Petrol",
+    "image": "/models/jupiter-125.webp",
+    "variants": [
+      {
+        "name": "DISC DT SXC",
+        "colours": [
+          "Copper + White",
+          "Brown + White",
+          "Green + White",
+          "Grey + White"
+        ]
+      },
+      {
+        "name": "DISC SXC",
+        "colours": [
+          "Matt Copper",
+          "Green",
+          "Red"
+        ]
+      },
+      {
+        "name": "ALLOY DRUM",
+        "colours": [
+          "MATT T.GREY",
+          "BLUE",
+          "WHITE"
+        ]
+      },
+      {
+        "name": "ALLOY DISC",
+        "colours": [
+          "BLACK",
+          "T.GREY",
+          "BLUE",
+          "WHITE"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "Copper + White",
+        "image": "/models/jupiter-125/copper-white.webp"
+      },
+      {
+        "name": "Brown + White",
+        "image": "/models/jupiter-125/brown-white.webp"
+      },
+      {
+        "name": "Green + White",
+        "image": "/models/jupiter-125/green-white.webp"
+      },
+      {
+        "name": "Grey + White",
+        "image": "/models/jupiter-125/grey-white.webp"
+      },
+      {
+        "name": "Matt Copper",
+        "image": "/models/jupiter-125/matt-copper.webp"
+      },
+      {
+        "name": "Green",
+        "image": "/models/jupiter-125/green.webp"
+      },
+      {
+        "name": "Red",
+        "image": "/models/jupiter-125/red.webp"
+      },
+      {
+        "name": "MATT T.GREY",
+        "image": "/models/jupiter-125/matt-t-grey.webp"
+      },
+      {
+        "name": "BLUE",
+        "image": "/models/jupiter-125/blue.webp"
+      },
+      {
+        "name": "WHITE",
+        "image": "/models/jupiter-125/white.webp"
+      },
+      {
+        "name": "BLACK",
+        "image": "/models/jupiter-125/black.webp"
+      },
+      {
+        "name": "T.GREY",
+        "image": "/models/jupiter-125/matt-t-grey.webp"
+      }
+    ]
+  },
+  {
+    "slug": "jupiter",
+    "key": "JUPITER",
+    "name": "Jupiter",
+    "category": "scooters",
+    "fuel": "Petrol",
+    "image": "/models/jupiter.webp",
+    "variants": [
+      {
+        "name": "DT",
+        "colours": [
+          "SPECTRAL COPPER",
+          "SPECTRAL BLUE"
+        ]
+      },
+      {
+        "name": "DRUM SXC",
+        "colours": [
+          "STRLT BLUE",
+          "GL.COPPER MATT",
+          "DAWN BLUE MATT"
+        ]
+      },
+      {
+        "name": "SMW",
+        "colours": [
+          "BLACK MATTE",
+          "T.GREY MATTE",
+          "WHITE",
+          "STRLT BLUE"
+        ]
+      },
+      {
+        "name": "DISC SXC",
+        "colours": [
+          "STRLT BLUE",
+          "DAWN BLUE MATT",
+          "GL.COPPER MATT"
+        ]
+      },
+      {
+        "name": "DRUM ALLOY",
+        "colours": [
+          "RED",
+          "STRLT BLUE",
+          "WHITE",
+          "T.GREY MATTE"
+        ]
+      },
+      {
+        "name": "SPECIAL EDITION",
+        "colours": [
+          "STARDUST BLACK"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "SPECTRAL COPPER",
+        "image": "/models/jupiter/spectral-copper.webp"
+      },
+      {
+        "name": "SPECTRAL BLUE",
+        "image": "/models/jupiter/spectral-blue.webp"
+      },
+      {
+        "name": "STRLT BLUE",
+        "image": "/models/jupiter/strlt-blue.webp"
+      },
+      {
+        "name": "GL.COPPER MATT",
+        "image": "/models/jupiter/gl-copper-matt.webp"
+      },
+      {
+        "name": "DAWN BLUE MATT",
+        "image": "/models/jupiter/dawn-blue-matt.webp"
+      },
+      {
+        "name": "BLACK MATTE",
+        "image": "/models/jupiter/black-matte.webp"
+      },
+      {
+        "name": "T.GREY MATTE",
+        "image": "/models/jupiter/t-grey-matte.webp"
+      },
+      {
+        "name": "WHITE",
+        "image": "/models/jupiter/white.webp"
+      },
+      {
+        "name": "RED",
+        "image": "/models/jupiter/red.webp"
+      },
+      {
+        "name": "STARDUST BLACK",
+        "image": "/models/jupiter/stardust-black.webp"
+      }
+    ]
+  },
+  {
+    "slug": "zest",
+    "key": "ZEST",
+    "name": "Zest",
+    "category": "scooters",
+    "fuel": "Petrol",
+    "image": "/models/zest.webp",
+    "variants": [
+      {
+        "name": "SXC",
+        "colours": [
+          "GREY",
+          "BLACK"
+        ]
+      },
+      {
+        "name": "MATTE",
+        "colours": [
+          "BLACK",
+          "PURPLE",
+          "T.GREY",
+          "BLUE"
+        ]
+      },
+      {
+        "name": "GLOSS",
+        "colours": [
+          "TURQ BLUE",
+          "WHITE"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "GREY",
+        "image": "/models/zest/grey.webp"
+      },
+      {
+        "name": "BLACK",
+        "image": "/models/zest/black.webp"
+      },
+      {
+        "name": "PURPLE",
+        "image": "/models/zest/purple.webp"
+      },
+      {
+        "name": "T.GREY",
+        "image": "/models/zest/grey.webp"
+      },
+      {
+        "name": "BLUE",
+        "image": "/models/zest/blue.webp"
+      },
+      {
+        "name": "TURQ BLUE",
+        "image": "/models/zest/turq-blue.webp"
+      },
+      {
+        "name": "WHITE",
+        "image": "/models/zest/white.webp"
+      }
+    ]
+  },
+  {
+    "slug": "tvs-x",
+    "key": "X",
+    "name": "TVS X",
+    "category": "electric",
+    "fuel": "Electric",
+    "image": "/models/tvs-x.webp",
+    "variants": [
+      {
+        "name": "X",
+        "colours": [
+          "HELKET RED"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "HELKET RED",
+        "image": "/models/tvs-x/helket-red.webp"
+      }
+    ]
+  },
+  {
+    "slug": "iqube",
+    "key": "IQUBE",
+    "name": "iQube",
+    "category": "electric",
+    "fuel": "Electric",
+    "image": "/models/iqube.webp",
+    "variants": [
+      {
+        "name": "UG (3.5 kWh)",
+        "colours": [
+          "T GREY",
+          "WALNUT BROWN",
+          "WHITE"
+        ]
+      },
+      {
+        "name": "11 Beige (3.1 kWh)",
+        "colours": [
+          "STARLIGHT BLUE"
+        ]
+      },
+      {
+        "name": "09 (2.3 kWh)",
+        "colours": []
+      },
+      {
+        "name": "S 15 Beige (4.7 kWh)",
+        "colours": [
+          "PURPLE",
+          "BLUE"
+        ]
+      },
+      {
+        "name": "ST 17 Beige (5.3 kWh)",
+        "colours": [
+          "COPPER BRONZE",
+          "STR BLUE"
+        ]
+      },
+      {
+        "name": "S 15 (4.7 kWh)",
+        "colours": [
+          "T GREY MATTE"
+        ]
+      },
+      {
+        "name": "11 (3.1 kWh)",
+        "colours": [
+          "T GREY",
+          "WHITE"
+        ]
+      },
+      {
+        "name": "UG Beige (3.5 kWh)",
+        "colours": [
+          "STR BLUE",
+          "COPPER BRONZE"
+        ]
+      },
+      {
+        "name": "ST 17 (5.3 kWh)",
+        "colours": [
+          "T GREY MATTE"
+        ]
+      },
+      {
+        "name": "MillionR (3.5 kWh)",
+        "colours": [
+          "AURORA GREEN"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "T GREY",
+        "image": "/models/iqube/t-grey.webp"
+      },
+      {
+        "name": "WALNUT BROWN",
+        "image": "/models/iqube/walnut-brown.webp"
+      },
+      {
+        "name": "WHITE",
+        "image": "/models/iqube/white.webp"
+      },
+      {
+        "name": "STARLIGHT BLUE",
+        "image": "/models/iqube/starlight-blue.webp"
+      },
+      {
+        "name": "BLUE",
+        "image": "/models/iqube/starlight-blue.webp"
+      },
+      {
+        "name": "COPPER BRONZE",
+        "image": "/models/iqube/copper-bronze.webp"
+      },
+      {
+        "name": "STR BLUE",
+        "image": "/models/iqube/starlight-blue.webp"
+      },
+      {
+        "name": "T GREY MATTE",
+        "image": "/models/iqube/t-grey.webp"
+      },
+      {
+        "name": "AURORA GREEN",
+        "image": "/models/iqube/aurora-green.webp"
+      }
+    ]
+  },
+  {
+    "slug": "orbiter",
+    "key": "ORBITER",
+    "name": "Orbiter",
+    "category": "electric",
+    "fuel": "Electric",
+    "image": "/models/orbiter.webp",
+    "variants": [
+      {
+        "name": "V1",
+        "colours": [
+          "MARTIAN COPPER",
+          "STELLAR SILVER"
+        ]
+      },
+      {
+        "name": "V2",
+        "colours": [
+          "LUNAR GREY",
+          "STRATOS BLUE",
+          "NEON SUNBURST",
+          "COSMIC TITANIUM",
+          "STELLAR SILVER",
+          "MARTIAN COPPER"
+        ]
+      }
+    ],
+    "colours": [
+      {
+        "name": "MARTIAN COPPER",
+        "image": "/models/orbiter/martian-copper.webp"
+      },
+      {
+        "name": "STELLAR SILVER",
+        "image": "/models/orbiter/stellar-silver.webp"
+      },
+      {
+        "name": "LUNAR GREY",
+        "image": "/models/orbiter/lunar-grey.webp"
+      },
+      {
+        "name": "STRATOS BLUE",
+        "image": "/models/orbiter/stratos-blue.webp"
+      },
+      {
+        "name": "NEON SUNBURST",
+        "image": "/models/orbiter/neon-sunburst.webp"
+      },
+      {
+        "name": "COSMIC TITANIUM",
+        "image": "/models/orbiter/cosmic-titanium.webp"
+      }
+    ]
+  }
+]

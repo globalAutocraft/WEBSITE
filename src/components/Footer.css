@@ -1,0 +1,309 @@
+.footer {
+  padding: clamp(64px, 9vw, 120px) clamp(20px, 9.5vw, 160px) 28px;
+  background: #050507;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* ---------- closing call to action ---------- */
+
+.footer-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  padding-bottom: clamp(48px, 6vw, 80px);
+  border-bottom: 1px solid #222228;
+}
+
+.footer-cta-title {
+  margin: 0;
+  font-size: clamp(40px, 5.6vw, 84px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+.footer-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+  max-width: 520px;
+}
+
+.f-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 54px;
+  padding: 0 22px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.f-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.f-btn-light {
+  background: #fff;
+  color: #050507;
+}
+
+.f-btn-light:hover {
+  background: #e6e6ea;
+}
+
+.f-btn svg {
+  transition: transform 0.25s ease;
+}
+
+.f-btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* ---------- link columns ---------- */
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding: clamp(40px, 5vw, 64px) 0;
+}
+
+.footer-label {
+  margin: 0 0 18px;
+  font-size: 14px;
+  color: #8a8a93;
+}
+
+.footer-cols ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.footer-cols a,
+.footer-cols button {
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  font: inherit;
+  font-size: 17px;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* underline that draws in from the left */
+.footer-cols a::after,
+.footer-cols button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.footer-cols a:hover::after,
+.footer-cols button:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* social icons: a row under the call-to-action buttons */
+.footer-social {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.footer-social a {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid #2a2a31;
+  color: #fff;
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform 0.35s cubic-bezier(0.34, 1.5, 0.5, 1), color 0.25s ease, border-color 0.25s ease;
+}
+
+/* brand colour fills the circle from the bottom on hover */
+.footer-social a::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--brand);
+  transform: translateY(101%);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.footer-social a:hover {
+  transform: translateY(-4px);
+  color: var(--ink);
+  border-color: var(--brand);
+}
+
+.footer-social a:hover::before {
+  transform: none;
+}
+
+/* ---------- giant wordmark ---------- */
+
+.footer-word {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -0.02em;
+  font-size: clamp(52px, 14.6vw, 250px);
+  font-weight: 600;
+  line-height: 0.82;
+  letter-spacing: -0.03em;
+  user-select: none;
+  overflow: hidden;
+  padding-top: 0.06em;
+}
+
+.footer-word span {
+  display: inline-block;
+  color: #1b1b21;
+  transform: translateY(105%);
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1) calc(var(--i) * 55ms), color 0.4s ease;
+}
+
+.footer-word.is-in span {
+  transform: none;
+}
+
+.footer-word span:hover {
+  color: #e31e24;
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1), color 0.15s ease;
+}
+
+/* "GLOBAL" lights up in TVS blue, "TVS" stays red */
+.footer-word span.is-blue:hover {
+  color: #2f5fe0;
+}
+
+/* ---------- bottom bar ---------- */
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid #222228;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #8a8a93;
+}
+
+.to-top {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.to-top svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  transform: rotate(-90deg);
+}
+
+.to-top-track {
+  stroke: #2a2a31;
+  stroke-width: 2;
+}
+
+.to-top-fill {
+  stroke: #e31e24;
+  stroke-width: 2;
+  stroke-dasharray: 1;
+  stroke-dashoffset: calc(1 - var(--p, 0));
+}
+
+.to-top-arrow {
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: rotate(90deg);
+  transform-origin: 24px 24px;
+  transition: transform 0.3s ease;
+}
+
+.to-top:hover .to-top-arrow {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.footer :focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* ---------- smaller screens ---------- */
+
+@media (max-width: 860px) {
+  .footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-cta-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+  }
+  .footer-social {
+    justify-content: flex-start;
+  }
+  .f-btn {
+    justify-content: center;
+  }
+  .footer-bottom {
+    align-items: flex-end;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-word span {
+    transform: none;
+    transition: color 0.2s ease;
+  }
+}

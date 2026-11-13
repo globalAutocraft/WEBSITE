@@ -1,0 +1,118 @@
+.vehicle-list {
+  list-style: none;
+  margin: 0 -20px;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.vehicle-list li {
+  animation: vehicle-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--i) * 50ms);
+}
+
+@keyframes vehicle-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+
+.vehicle-card {
+  display: block;
+  padding: 18px 20px 18px;
+  border-radius: 16px;
+  color: #0e0e12;
+  text-decoration: none;
+  transition: background 0.25s ease;
+}
+
+.vehicle-name {
+  display: block;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.vehicle-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 168px;
+  margin: 6px 0 10px;
+}
+
+.vehicle-img img {
+  max-width: 88%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.vehicle-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  transition: background 0.25s ease;
+}
+
+.vehicle-card:hover {
+  background: #fff;
+}
+
+.vehicle-card:hover .vehicle-img img {
+  transform: translateX(8px) scale(1.04);
+}
+
+.vehicle-card:hover .vehicle-tag {
+  background: #e4e5e9;
+}
+
+.vehicle-card:focus-visible {
+  outline: 2px solid #0e0e12;
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .vehicle-img {
+    height: 140px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vehicle-list li {
+    animation: none;
+  }
+  .vehicle-card:hover .vehicle-img img {
+    transform: none;
+  }
+}
+
+.vehicle-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  color: #0e0e12;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #b9bac2;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.vehicle-all:hover {
+  text-decoration-color: currentColor;
+}
+
+.vehicle-all svg {
+  transition: transform 0.25s ease;
+}
+
+.vehicle-all:hover svg {
+  transform: translateX(4px);
+}
